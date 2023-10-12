@@ -4,34 +4,35 @@ const kids = [
         Age: 16,
         Hair: "Brown",
         GPA: -4,
+        Siblings: ["ana","cara"],
     },
     {
         Name: "Sofie",
         Age: 6,
         Hair: "Brown",
         GPA: 4.0,
+        Siblings: ["snow","snap"],
     },
     {
         Name: "Soft",
         Age: 11,
         Hair: "Red",
         GPA: 2.8,
+        Siblings: ["are","sare"],
     },
     {
         Name: "So",
         Age: 11,
         Hair: "Blonde",
         GPA: 2.8,
+        Siblings: ["marry","john"],
     },
     ];
     
     
-    kids.forEach ((el)=> console.log(el.Name));
-    kids.forEach ((el)=> console.log (el.Hair));
-    
-    
-    
-    const result = kids.filter((kid) => kid.Name = "So");
-    
-    console.log(result);
-    
+    kids.forEach ((kid)=> console.log(kid.Name))
+
+    kids.forEach ((kid)=> 
+    kid.Siblings.forEach((Sibling) => console.log(Sibling)))
+    const out = kids.filter((kid)=> kid.Age < 10)
+    console.log(out);
